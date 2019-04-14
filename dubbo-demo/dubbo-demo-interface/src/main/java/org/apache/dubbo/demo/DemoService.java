@@ -22,5 +22,7 @@ public interface DemoService {
 
     String sayHello(String name);
 
+    String Tango(String tango);
+
     CompletableFuture<String> sayHelloAsync(String name);
 }

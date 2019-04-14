@@ -33,6 +33,7 @@ public class Application {
         reference.setApplication(new ApplicationConfig("dubbo-demo-api-consumer"));
         reference.setRegistry(new RegistryConfig("multicast://224.5.6.7:1234"));
         reference.setInterface(DemoService.class);
+        //源码调试消费端的根入口点
         DemoService service = reference.get();
         String message = service.sayHello("dubbo");
         System.out.println(message);
